@@ -8,7 +8,7 @@ const cors = require('cors');
 //require('crypto').randomBytes(64).toString('hex')
 dotenv.config()
 
-
+const ssh;
 mongoose.connect(process.env.DATABASE_ACCESS, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
